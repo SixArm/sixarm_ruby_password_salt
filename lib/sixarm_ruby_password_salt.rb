@@ -1,14 +1,15 @@
+# -*- encoding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem: Password Salt
+= SixArm Ruby Gem » PasswordSalt
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
+License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
 
-Password tool to create strong user-friendly salt for hashes,
-using Ruby's secure random cryptographic functions.
+PasswordSalt generates secure random strings suitable for password hash salt.
+
+You can change how the salt is created using the optional parameters.
 
 Example:
   require 'sixarm_ruby_password_salt'
