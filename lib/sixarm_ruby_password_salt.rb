@@ -1,11 +1,11 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem » PasswordSalt
+= SixArm.com » Ruby » PasswordSalt class to generate secure user-friendly passwords
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
+Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
+License:: See LICENSE.txt file
 
 PasswordSalt generates secure random strings suitable for password hash salt.
 
@@ -27,8 +27,15 @@ if it is not, then we require our sixarm_ruby_secure_random gem.
 
 =end
 
-
-if !defined?(SecureRandom) then require 'sixarm_ruby_secure_random' end
+if !defined?(SecureRandom)
+  begin
+    # First we will try to load the Ruby standard library
+    require 'securerandom'
+  rescue
+    # Second we will try to load our own SecureRandom gem library
+    require 'sixarm_ruby_secure_random' 
+  end
+end
 
 
 class PasswordSalt < String
