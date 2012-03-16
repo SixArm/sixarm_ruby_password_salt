@@ -4,15 +4,22 @@ require 'simplecov'
 SimpleCov.start
 require 'sixarm_ruby_password_salt'
 
-class Testing < Test::Unit::TestCase
+describe PasswordSalt do
 
- def test_all
-  20.times{
-   x=PasswordSalt.new
-   assert(x.is_a?(String))
-   assert_equal(x.length,PasswordSalt::COUNT)
-   assert(x=~/^[a-z]+$/,"lowercase letters:#{x}")
-  }
- end
+  before do
+    P ||= PasswordSalt.new
+  end
+
+  it "creates passwords" do
+    P.must_be_kind_of String
+  end
+
+  it "uses the given length" do
+    P.length.must_equal PasswordSalt::COUNT
+  end
+
+  it "uses lowercase letters exclusively" do
+    P.must_match /^[a-z]+$/
+  end
 
 end
