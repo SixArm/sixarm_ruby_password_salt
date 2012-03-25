@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> PasswordSalt class to generate secure user-friendly passwords
 
-* Docs: <http://sixarm.com/sixarm_ruby_password_salt/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_password_salt/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_password_salt>
 * Repo: <http://github.com/sixarm/sixarm_ruby_password_salt>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
