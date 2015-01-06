@@ -41,7 +41,7 @@ To enable high security	for all	our gems:
 
 To install with high security:
 
-    gem install sixarm_ruby_password_salt --test --trust-policy HighSecurity
+    gem install sixarm_ruby_password_salt --trust-policy HighSecurity
 
 
 ## Example
