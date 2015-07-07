@@ -61,8 +61,3 @@ This can easily be sent via web URIs, email, etc.
 Ruby 1.8.6 and older does not have a secure random number method,
 so this gem checks to see if the SecureRandom class is defined;
 if it is not, then we require our sixarm_ruby_secure_random gem.
-
-
-## Changes
-
-* 2012-03-16 1.3.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
