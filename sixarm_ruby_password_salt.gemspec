@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_password_salt"
-  s.summary           = "SixArm.com » Ruby » PasswordSalt class"
+  s.summary           = "SixArm.com → Ruby → PasswordSalt class"
   s.description       = "PasswordSalt class to generate secure websafe strings using random cryptography"
   s.version           = "1.3.1"
 
